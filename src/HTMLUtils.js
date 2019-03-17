@@ -10,7 +10,7 @@ export const TextOnlyPropTypes = TextStylePropTypes.filter((prop) => ViewStylePr
 // These tags should ALWAYS be mapped to View wrappers
 export const BLOCK_TAGS = ['address', 'article', 'aside', 'footer', 'hgroup', 'nav', 'section', 'blockquote', 'dd',
     'dl', 'dt', 'figure', 'hr', 'li', 'main', 'ol', 'ul', 'cite', 'data', 'rp', 'rtc', 'ruby', 'area',
-    'img', 'map', 'center'];
+    'img', 'map', 'center', 'table', 'tr', 'td', 'th'];
 
 // These tags should ALWAYS be mapped to Text wrappers
 export const TEXT_TAGS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'figcaption', 'p', 'pre', 'abbr', 'b', 'bdi', 'bdo', 'code',
@@ -43,9 +43,8 @@ export const ABSOLUTE_FONT_SIZE = {
 };
 
 export const IGNORED_TAGS = ['head', 'scripts', 'audio', 'video', 'track', 'embed', 'object', 'param', 'source', 'canvas', 'noscript',
-    'caption', 'col', 'colgroup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr', 'button', 'datalist', 'fieldset', 'form',
-    'input', 'label', 'legend', 'meter', 'optgroup', 'option', 'output', 'progress', 'select', 'textarea', 'details', 'diaglog',
-    'menu', 'menuitem', 'summary'];
+    'caption', 'col', 'colgroup', 'button', 'datalist', 'fieldset', 'form', 'input', 'label', 'legend', 'meter', 'optgroup', 'option',
+    'output', 'progress', 'select', 'textarea', 'details', 'diaglog', 'menu', 'menuitem', 'summary'];
 
 // As of react-native 0.48, this might change in the future
 export const PERC_SUPPORTED_STYLES = [

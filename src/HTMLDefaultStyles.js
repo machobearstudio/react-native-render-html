@@ -1,5 +1,9 @@
 const BASE_FONT_SIZE = 14;
 
+const BASE_TABLE_CELL_STYLE = {
+    flex: 1,
+};
+
 export function generateDefaultBlockStyles (baseFontSize = BASE_FONT_SIZE) {
     return {
         div: { },
@@ -19,7 +23,12 @@ export function generateDefaultBlockStyles (baseFontSize = BASE_FONT_SIZE) {
             marginBottom: baseFontSize / 2,
             height: 1,
             backgroundColor: '#CCC'
-        }
+        },
+        tr: {
+            flexDirection: 'row'
+        },
+        td: BASE_TABLE_CELL_STYLE,
+        th: BASE_TABLE_CELL_STYLE
     };
 }
 
